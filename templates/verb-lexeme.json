@@ -1,0 +1,79 @@
+{
+  "id": "template-verb-lexeme",
+  "type": "verb-lexeme",
+  "features": [
+    {
+      "id": "verb-lexeme-form",
+      "name": "FORM",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "atomic",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "verb-lexeme-syn",
+      "name": "SYN",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "verb-lexeme-syn-fs",
+          "type": "syn-obj",
+          "features": [
+            {
+              "id": "verb-lexeme-cat",
+              "name": "CAT",
+              "value": {
+                "kind": "feature-structure",
+                "structure": {
+                  "id": "verb-lexeme-cat-fs",
+                  "type": "category",
+                  "features": [
+                    {
+                      "id": "verb-lexeme-head",
+                      "name": "HEAD",
+                      "value": {
+                        "kind": "type",
+                        "label": "verb"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "verb-lexeme-arg-st",
+      "name": "ARG-ST",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "verb-lexeme-sem",
+      "name": "SEM",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "verb-lexeme-sem-fs",
+          "type": "sem-obj",
+          "features": []
+        }
+      }
+    }
+  ]
+}

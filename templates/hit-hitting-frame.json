@@ -1,0 +1,246 @@
+{
+  "id": "template-hit-hitting-frame",
+  "type": "word",
+  "features": [
+    {
+      "id": "hit-form",
+      "name": "FORM",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "atomic",
+            "value": "hit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hit-syn",
+      "name": "SYN",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "hit-syn-fs",
+          "type": "syn-obj",
+          "features": [
+            {
+              "id": "hit-cat",
+              "name": "CAT",
+              "value": {
+                "kind": "feature-structure",
+                "structure": {
+                  "id": "hit-cat-fs",
+                  "type": "verb",
+                  "features": [
+                    {
+                      "id": "hit-select",
+                      "name": "SELECT",
+                      "value": {
+                        "kind": "underspecified"
+                      }
+                    },
+                    {
+                      "id": "hit-xarg",
+                      "name": "XARG",
+                      "value": {
+                        "kind": "underspecified"
+                      }
+                    },
+                    {
+                      "id": "hit-lid",
+                      "name": "LID",
+                      "value": {
+                        "kind": "list",
+                        "items": []
+                      }
+                    },
+                    {
+                      "id": "hit-vf",
+                      "name": "VF",
+                      "value": {
+                        "kind": "atomic",
+                        "value": "base"
+                      }
+                    },
+                    {
+                      "id": "hit-ic",
+                      "name": "IC",
+                      "value": {
+                        "kind": "atomic",
+                        "value": "+"
+                      }
+                    },
+                    {
+                      "id": "hit-aux",
+                      "name": "AUX",
+                      "value": {
+                        "kind": "atomic",
+                        "value": "-"
+                      }
+                    },
+                    {
+                      "id": "hit-inv",
+                      "name": "INV",
+                      "value": {
+                        "kind": "atomic",
+                        "value": "-"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hit-val",
+              "name": "VAL",
+              "value": {
+                "kind": "feature-structure",
+                "structure": {
+                  "id": "hit-val-fs",
+                  "type": "valence",
+                  "features": [
+                    {
+                      "id": "hit-spr",
+                      "name": "SPR",
+                      "value": {
+                        "kind": "list",
+                        "items": []
+                      }
+                    },
+                    {
+                      "id": "hit-subj",
+                      "name": "SUBJ",
+                      "value": {
+                        "kind": "list",
+                        "items": [
+                          {
+                            "kind": "type",
+                            "label": "NP",
+                            "indexId": "i"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "hit-comps",
+                      "name": "COMPS",
+                      "value": {
+                        "kind": "list",
+                        "items": [
+                          {
+                            "kind": "type",
+                            "label": "NP",
+                            "indexId": "j"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hit-mrkg",
+              "name": "MRKG",
+              "value": {
+                "kind": "atomic",
+                "value": "unmk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hit-arg-st",
+      "name": "ARG-ST",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "i"
+          },
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "j"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hit-sem",
+      "name": "SEM",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "hit-sem-fs",
+          "type": "sem-obj",
+          "features": [
+            {
+              "id": "hit-index",
+              "name": "INDEX",
+              "value": {
+                "kind": "atomic",
+                "value": "s"
+              }
+            },
+            {
+              "id": "hit-ltop",
+              "name": "LTOP",
+              "value": {
+                "kind": "atomic",
+                "value": "l0"
+              }
+            },
+            {
+              "id": "hit-frames",
+              "name": "FRAMES",
+              "value": {
+                "kind": "list",
+                "items": [
+                  {
+                    "kind": "feature-structure",
+                    "structure": {
+                      "id": "hit-frame-fs",
+                      "type": "hitting-frame",
+                      "features": [
+                        {
+                          "id": "hit-frame-label",
+                          "name": "LABEL",
+                          "value": {
+                            "kind": "atomic",
+                            "value": "hitting-rel"
+                          }
+                        },
+                        {
+                          "id": "hit-frame-hitter",
+                          "name": "HITTER",
+                          "value": {
+                            "kind": "index-ref",
+                            "indexId": "i"
+                          }
+                        },
+                        {
+                          "id": "hit-frame-hittee",
+                          "name": "HITTEE",
+                          "value": {
+                            "kind": "index-ref",
+                            "indexId": "j"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "template-passive-word",
+  "type": "passive-word",
+  "features": [
+    {
+      "id": "passive-phon",
+      "name": "PHON",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "atomic",
+            "value": "seen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "passive-syn",
+      "name": "SYN",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "passive-syn-fs",
+          "type": "syn-obj",
+          "features": [
+            {
+              "id": "passive-cat",
+              "name": "CAT",
+              "value": {
+                "kind": "feature-structure",
+                "structure": {
+                  "id": "passive-cat-fs",
+                  "type": "category",
+                  "features": [
+                    {
+                      "id": "passive-head",
+                      "name": "HEAD",
+                      "value": {
+                        "kind": "type",
+                        "label": "verb"
+                      }
+                    },
+                    {
+                      "id": "passive-val",
+                      "name": "VAL",
+                      "value": {
+                        "kind": "feature-structure",
+                        "structure": {
+                          "id": "passive-val-fs",
+                          "type": "valence",
+                          "features": [
+                            {
+                              "id": "passive-subj",
+                              "name": "SUBJ",
+                              "value": {
+                                "kind": "list",
+                                "items": [
+                                  {
+                                    "kind": "index-ref",
+                                    "indexId": "2"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "passive-comps",
+                              "name": "COMPS",
+                              "value": {
+                                "kind": "list",
+                                "items": []
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "passive-arg-st",
+      "name": "ARG-ST",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "1"
+          },
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "2"
+          }
+        ]
+      }
+    }
+  ]
+}

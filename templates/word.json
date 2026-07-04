@@ -1,0 +1,39 @@
+{
+  "id": "template-word",
+  "type": "word",
+  "features": [
+    {
+      "id": "word-phon",
+      "name": "PHON",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "atomic",
+            "value": "word"
+          }
+        ]
+      }
+    },
+    {
+      "id": "word-synsem",
+      "name": "SYNSEM",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "word-synsem-fs",
+          "type": "object",
+          "features": [
+            {
+              "id": "word-local",
+              "name": "LOCAL",
+              "value": {
+                "kind": "underspecified"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

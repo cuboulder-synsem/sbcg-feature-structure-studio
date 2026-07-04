@@ -1,0 +1,111 @@
+{
+  "id": "template-transitive-verb-word",
+  "type": "word",
+  "features": [
+    {
+      "id": "tvw-phon",
+      "name": "PHON",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "atomic",
+            "value": "sees"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tvw-syn",
+      "name": "SYN",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "tvw-syn-fs",
+          "type": "syn-obj",
+          "features": [
+            {
+              "id": "tvw-cat",
+              "name": "CAT",
+              "value": {
+                "kind": "feature-structure",
+                "structure": {
+                  "id": "tvw-cat-fs",
+                  "type": "category",
+                  "features": [
+                    {
+                      "id": "tvw-head",
+                      "name": "HEAD",
+                      "value": {
+                        "kind": "type",
+                        "label": "verb"
+                      }
+                    },
+                    {
+                      "id": "tvw-val",
+                      "name": "VAL",
+                      "value": {
+                        "kind": "feature-structure",
+                        "structure": {
+                          "id": "tvw-val-fs",
+                          "type": "valence",
+                          "features": [
+                            {
+                              "id": "tvw-subj",
+                              "name": "SUBJ",
+                              "value": {
+                                "kind": "list",
+                                "items": [
+                                  {
+                                    "kind": "index-ref",
+                                    "indexId": "1"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "tvw-comps",
+                              "name": "COMPS",
+                              "value": {
+                                "kind": "list",
+                                "items": [
+                                  {
+                                    "kind": "index-ref",
+                                    "indexId": "2"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tvw-arg-st",
+      "name": "ARG-ST",
+      "value": {
+        "kind": "list",
+        "items": [
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "1"
+          },
+          {
+            "kind": "type",
+            "label": "NP",
+            "indexId": "2"
+          }
+        ]
+      }
+    }
+  ]
+}

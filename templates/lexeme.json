@@ -1,0 +1,58 @@
+{
+  "id": "template-lexeme",
+  "type": "lexeme",
+  "features": [
+    {
+      "id": "lexeme-phon",
+      "name": "PHON",
+      "value": {
+        "kind": "underspecified"
+      }
+    },
+    {
+      "id": "lexeme-syn",
+      "name": "SYN",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "lexeme-syn-fs",
+          "type": "syn-obj",
+          "features": [
+            {
+              "id": "lexeme-cat",
+              "name": "CAT",
+              "value": {
+                "kind": "feature-structure",
+                "structure": {
+                  "id": "lexeme-cat-fs",
+                  "type": "category",
+                  "features": []
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lexeme-sem",
+      "name": "SEM",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "lexeme-sem-fs",
+          "type": "sem-obj",
+          "features": []
+        }
+      }
+    },
+    {
+      "id": "lexeme-arg-st",
+      "name": "ARG-ST",
+      "value": {
+        "kind": "list",
+        "items": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "template-basic-sign",
+  "type": "sign",
+  "features": [
+    {
+      "id": "basic-sign-phon",
+      "name": "PHON",
+      "value": {
+        "kind": "list",
+        "items": []
+      }
+    },
+    {
+      "id": "basic-sign-syn",
+      "name": "SYN",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "basic-sign-syn-fs",
+          "type": "syn-obj",
+          "features": []
+        }
+      }
+    },
+    {
+      "id": "basic-sign-sem",
+      "name": "SEM",
+      "value": {
+        "kind": "feature-structure",
+        "structure": {
+          "id": "basic-sign-sem-fs",
+          "type": "sem-obj",
+          "features": []
+        }
+      }
+    },
+    {
+      "id": "basic-sign-arg-st",
+      "name": "ARG-ST",
+      "value": {
+        "kind": "list",
+        "items": []
+      }
+    }
+  ]
+}
