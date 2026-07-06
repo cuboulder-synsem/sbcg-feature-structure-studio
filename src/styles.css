@@ -56,12 +56,35 @@ button:focus-visible {
 
 .studio-header {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   gap: 24px;
   padding: 24px 28px 18px;
   background: #263238;
   color: #f8f5ed;
+}
+
+.studio-brand {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 16px;
+}
+
+.studio-logo {
+  display: block;
+  width: 118px;
+  height: 60px;
+  flex: 0 0 auto;
+  padding: 4px;
+  border-radius: 6px;
+  background: #ffffff;
+  object-fit: contain;
+  box-shadow: 0 0 0 1px rgba(18, 28, 32, 0.24);
+}
+
+.studio-title {
+  min-width: 0;
 }
 
 .studio-header h1 {
@@ -1345,6 +1368,15 @@ input {
     align-items: stretch;
     flex-direction: column;
     padding: 20px;
+  }
+
+  .studio-brand {
+    align-items: center;
+  }
+
+  .studio-logo {
+    width: 96px;
+    height: 50px;
   }
 
   .mode-toggle,

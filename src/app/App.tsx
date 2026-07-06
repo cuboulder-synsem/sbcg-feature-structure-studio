@@ -167,9 +167,16 @@ export function App() {
   return (
     <main className="studio-shell">
       <header className="studio-header">
-        <div>
-          <h1>Feature Structure Studio</h1>
-          <p>Local HPSG/SBCG feature-structure authoring with LaTeX as output.</p>
+        <div className="studio-brand">
+          <img
+            className="studio-logo"
+            src="/semiotic-syntax-logo.jpeg"
+            alt="Semiotic Syntax logo"
+          />
+          <div className="studio-title">
+            <h1>Feature Structure Studio</h1>
+            <p>Local HPSG/SBCG feature-structure authoring with LaTeX as output.</p>
+          </div>
         </div>
         <div className="mode-toggle" role="tablist" aria-label="Studio mode">
           <button

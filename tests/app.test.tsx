@@ -1,3 +1,4 @@
+import { existsSync, readFileSync } from "node:fs";
 import { act } from "react";
 import { createRoot } from "react-dom/client";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -9,6 +10,19 @@ import { App } from "../src/app/App";
 ).IS_REACT_ACT_ENVIRONMENT = true;
 
 describe("Feature Structure Studio app", () => {
+  it("uses the Semiotic Syntax logo as the primary app icon", () => {
+    const markup = renderToStaticMarkup(<App />);
+    const indexHtml = readFileSync("index.html", "utf8");
+
+    expect(markup).toContain('class="studio-logo"');
+    expect(markup).toContain('src="/semiotic-syntax-logo.jpeg"');
+    expect(markup).toContain('alt="Semiotic Syntax logo"');
+    expect(indexHtml).toContain(
+      '<link rel="icon" type="image/jpeg" href="/semiotic-syntax-logo.jpeg" />'
+    );
+    expect(existsSync("public/semiotic-syntax-logo.jpeg")).toBe(true);
+  });
+
   it("offers a PNG download button for the paper view", () => {
     const markup = renderToStaticMarkup(<App />);
 
